@@ -108,17 +108,38 @@ span{
     padding: 24px 20px;
 }
 .card{
-    width: 190px;
+    width: 230px;
     height: 190px;
     background:linear-gradient( rgba(0,0,0,0.5));
-    background-image:linear-gradient(180deg, rgba(37, 37, 37, 0)10%, #343131),url(Overlay\ \(1\).png);
+    background-image:linear-gradient(180deg, rgba(37, 37, 37, 0)10%, #343131);
     background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;
     color: white;
     font-size: 24px;
+    border-radius: 10px;
 }
-.card h3{
-    font-size: 28px;
+.s1{
+    background-image:linear-gradient( rgba(7, 7, 7, 0), #000000),url(background.png);
+ }
+.s2{
+    background-image:linear-gradient( rgba(11, 11, 11, 0), #000000),url(Overlay\ \(1\).png);
+ }
+ .s3{
+    background-image:linear-gradient( rgba(7, 7, 7, 0), #121212),url(Overlay.png);
+ }
+ .s4{
+    background-image:linear-gradient( rgba(7, 7, 7, 0), #121212),url(background.png);
+ }
+.s5{
+    background-image:linear-gradient( rgba(7, 7, 7, 0), #121212),url(Overlay\ \(1\).png);
+ }
+.card p{
+    margin-top: 60px;
+    font-size: 34px;
+    color: #ffffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700px;
+    text-align: center;
 }
 
