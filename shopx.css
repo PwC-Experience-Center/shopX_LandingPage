@@ -1,11 +1,34 @@
 body{
-    background-image:linear-gradient(180deg, rgba(18, 18, 18, 0), #121212),url("background.png");
+    /*background-image:linear-gradient(180deg, rgba(18, 18, 18, 0), #121212),url("background.png");
     background-size: cover;
-    background-repeat: no-repeat;
-/*    background:linear-gradient(180deg, rgba(18, 18, 18, 0)56.2%, #121212 95%);    */
+    background-repeat: no-repeat; */
+    background-image:linear-gradient( rgba(7, 7, 7, 0), #121212);
     height: 100%;
     margin: 0;
     width: 100%;
+}
+#myvideo{
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay {
+    background:linear-gradient( rgba(0,0,0,0.5));
+    background-image:linear-gradient(180deg, rgba(8, 8, 8, 0)10%, #343131);
+    opacity: .8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  
 }
 .nav{
     width: 100%;
@@ -59,18 +82,25 @@ body{
     color: #000000;
 }
 
-
+.heading{
+    position: relative;
+    top:10%;
+    margin-left: 24px;
+    align-items: flex-start;
+    height: 45%;
+}
 .big-text{
-    margin-top: 8%;
+   
     font-family:'Lucida Sans';
     font-style: normal;
     font-weight: 700;
     font-size:40px;
     line-height: 60px;
     color: white;
-    width:1013px;
+    width:800px;
     height: 123px;
-    padding: 0px 24px ;
+    text-align: left;
+    padding-bottom: 3%;
     
 }
 span{
@@ -83,10 +113,12 @@ span{
     font-size: 18x;
     line-height: 20px;
     color: white;
-    width:1013px;
+    width:700px;
     height: 60px;
-    align-self: stretch;
-    padding: 33px 24px ;
+    margin: 0px;
+    text-align: left;
+    padding-bottom: 24px;
+    
 }
 
 .view{
@@ -96,10 +128,17 @@ span{
     background-color: #121212;
     color: #ffffff;
     border-color: #FFE500;
-    padding: 1px 20px;
-    margin-left: 24px;
+    padding: 1px 0px;
+    align-self: left;
+    float: left;
+    
+    top: 30px;
+    
 }
 .cards{
+    margin-top: 10%;
+    left: 0px;
+    height: 150px;
     bottom: 0px;
     display: flex;
     overflow-x: hidden;
@@ -107,11 +146,11 @@ span{
     white-space: nowrap;
     justify-content: space-around;    
     position: relative;
-    padding: 24px 20px;
+    
 }
 .card{
     width: 230px;
-    height: 190px;
+    height: 130px;
     background:linear-gradient( rgba(0,0,0,0.5));
     background-image:linear-gradient(180deg, rgba(37, 37, 37, 0)10%, #343131);
     background-size: cover;
@@ -121,6 +160,8 @@ span{
     font-size: 24px;
     border-radius: 10px;
     bottom: 0px;
+    text-align: center;
+    margin-left: 0px;
 }
 .s1{
     background-image:linear-gradient( rgba(7, 7, 7, 0), #000000),url(background.png);
@@ -138,8 +179,8 @@ span{
     background-image:linear-gradient( rgba(7, 7, 7, 0), #121212),url(Overlay\ \(1\).png);
  }
 .card p{
-    margin-top: 60px;
-    font-size: 34px;
+    margin-top: 30px;
+    font-size: 30px;
     color: #ffffff;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 700px;
