@@ -123,9 +123,13 @@ span{
     padding: 1px 0px;
     align-self: left;
     float: left;
-    
     top: 30px;
     
+}
+.view a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
 }
 .cards{
     margin-top: 10%;
