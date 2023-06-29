@@ -1,11 +1,5 @@
 body{
-    /*background-image:linear-gradient(180deg, rgba(18, 18, 18, 0), #121212),url("background.png");
-    background-size: cover;
-    background-repeat: no-repeat; */
-    
-    height: 100%;
     margin: 0;
-    width: 100%;
 }
 .myvideo{
     position: fixed;
@@ -14,15 +8,14 @@ body{
     width: 100%;
     height: 100%;
 }
-
 .overlay {
-    background-image:linear-gradient(180deg, rgba(8, 8, 8, 0)10%, #343131);
+    background:linear-gradient(180deg, rgba(8, 8, 8, 0)10%, #343131);
     opacity: .8;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 0;
+    top:0;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -43,7 +36,6 @@ body{
     position: absolute;
     justify-content: space-between;
     padding: 15px 0px;
-    position: relative;
 }
 .logo{
     padding: 1px 24px ;
@@ -139,7 +131,7 @@ span{
     margin-top: 10%;
     left: 0px;
     height: 150px;
-    bottom: 30px;
+    bottom: 0px;
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
