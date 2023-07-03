@@ -1,68 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="shopx.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>shopX</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+      html {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
     </style>
-</head>
-    <body>
-        <video autoplay muted loop class="myvideo" controls>
-            <source src="videogo.mp4" type="video/mp4">
-        </video>
-        <div class="overlay">
-        <div class="nav">
-            <img src="Logo.png" alt="logo" class="logo">
-            <div class="items">
-                <p class="item">item1</p>
-                <p class="item">item2</p>
-            </div>
-            <div class="end">
-                <p class="see">See action</p>
-                <button class="action">Action</button>
-            </div>
-        </div>
-        <div class="heading">
-            <p class="big-text">Revolutionize your <br>shopping experience with<br>
-                 our
-                  <span>AR/VR</span>
-                   Store platform.
-                </p>
-            <p class="small-text">Transform your shopping experience with our AR/VR Store platform. Step into 
-            a captivating world of 3D<br> environments, lifelike interation,
-            and endless possibilities. Elevate engagements and boost conversations<br>with our cutting edge solution
-            </p>
-            <button class="view"><a href="https://pwc-experience-center.github.io/ShopX-build/">View store in 3D</a></button> 
+  </head>
 
-            <button class="view"><a href="2dview/index.html">View Catalogue in 2d </a></button> 
+  <body class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed" style="background-image: url('header.png');">
+    <div class="h-full">
+        </div>
+
+        <div class="flex flex-col">
+          <a href="../index.html">
+            <h1 class="text-4xl font-bold text-blue-500">ShopX</h1>
+            <h2 class="text-lg font-bold">Immersive Shop</h2>
+        </a>
+
+        </div>
+         
+        <div class=" flex bg-gray-900 items-center justify-center">
+          <div class="grid grid-cols-12 gap-2 gap-y-4 max-w-6xl">
+            <!-- image 1 -->
+            <div class="col-span-12 sm:col-span-6 md:col-span-3">
+              <card class="w-full flex flex-col">
+                <div class="relative">
+        
+                  <!-- Image Video -->
+                  <a href="#">
+                    <div class="w-60 h-60">
+                      <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">$24</p>
+                      <img src="1.jpeg" class="aspect-w-1 w-full h-full" />
+                    </div>
+                  </a>
+        
+                  
+                </div>
+        
+                <div class="flex flex-row mt-2 gap-2">
+        
+                  <!-- Description -->
+                  <div clas="flex flex-col">
+                    <a href="#">
+                      <p class="text-gray-100 text-sm font-semibold">The Midnight Marvel Chair.</p>
+                    </a>
+                    <a class="text-gray-400 text-xs mt-2 hover:text-gray-100" href="https://midnight-mavel.swiftxr.app/"> View in Your Space ( AR ) </a>
+                    <p class="text-gray-400 text-xs mt-1">
+
+                      Introducing the Curve Office Chair: a stylish and comfortable furniture piece designed for modern workspaces. Its ergonomic curves provide excellent lumbar support for all-day comfort.
+
+                    </p>
+                  </div>
+        
+                </div>
+              </card>
+            </div>
+        
+            <!-- image 2 -->
+            <div class="col-span-12 sm:col-span-6 md:col-span-3">
+              <card class="w-full flex flex-col">
+                <div class="relative">
+        
+                  <!-- Image Video -->
+                  <a href="#">
+                    <div class="w-60 h-60">
+                      <img src="2.jpeg" class="aspect-w-1 w-full h-full" />
+                    </div>
+                  </a>
+        
+                  <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">$17</p>
+                </div>
+        
+                <div class="flex flex-row mt-2 gap-2">
+        
+                  <!-- Description -->
+                  <div clas="flex flex-col">
+                    <a href="#">
+                      <p class="text-gray-100 text-sm font-semibold">The Tinwood Trio Table</p>
+                    </a>
+                    <a class="text-gray-400 text-xs mt-2 hover:text-gray-100" href="https://tablecrueso.swiftxr.app/"> View in Your Space ( AR )  </a>
+                    <p class="text-gray-400 text-xs mt-1">
+                      This stylish table combines functionality with a sleek design, making it perfect for small areas. Its round shape adds a touch of elegance while maximizing surface area. Crafted with quality materials, the Round Mini Table offers durability and stability.
+                    </p>
+                  </div>
+        
+                </div>
+              </card>
+            </div>
+        
+            <!-- image 3 -->
+            <div class="col-span-12 sm:col-span-6 md:col-span-3">
+              <card class="w-full flex flex-col">
+                <div class="relative">
+        
+                  <!-- Image Video -->
+                  <a href="#">
+                    <div class="w-60 h-60">
+                      <img src="3.jpeg" class="aspect-w-1 w-full h-full" />
+                    </div>
+                  </a>
+        
+                  <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">$22</p>
+                </div>
+        
+                <div class="flex flex-row mt-2 gap-2">
+                  
+        
+                  <!-- Description -->
+                  <div clas="flex flex-col">
+                    <a href="#">
+                      <p class="text-gray-100 text-sm font-semibold">The Enigmatic Noir Chair</p>
+                    </a>
+                    <a class="text-gray-400 text-xs mt-2 hover:text-gray-100" href="https://noir-chair.swiftxr.app/"> View in Your Space ( AR ) </a>
+                    <p class="text-gray-400 text-xs mt-1">
+                      This innovative chair combines convenience and comfort in a compact design. With its foldable feature, it easily collapses for effortless transport and storage.
+                    </p>
+                  </div>
+        
+                </div>
+              </card>
+            </div>
+        
+            <!-- image 4 -->
+            <div class="col-span-12 sm:col-span-6 md:col-span-3">
+              <card class="w-full flex flex-col">
+                <div class="relative">
+        
+                  <!-- Image Video -->
+                  <a href="#">
+                    <div class="w-60 h-60">
+                      <img src="4.jpeg" class="aspect-w-1 w-full h-full" />
+                    </div>
+                  </a>
+        
+                  <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">$27</p>
+                </div>
+        
+                <div class="flex flex-row mt-2 gap-2">
+                  
+        
+                  <!-- Description -->
+                  <div clas="flex flex-col">
+                    <a href="#">
+                      <p class="text-gray-100 text-sm font-semibold">The Majestic Marble Symphony.</p>
+                    </a>
+                    <a class="text-gray-400 text-xs mt-2 hover:text-gray-100" href="https://marbletable.swiftxr.app/""> View in Your Space ( AR )  </a>
+                    <p class="text-gray-400 text-xs mt-1">
+                      A timeless centerpiece that brings nature's beauty into your space. Crafted from high-quality solid wood, this round table showcases the natural grain and texture, adding warmth and elegance to any room.
+                    </p>
+                  </div>
+                </div>
+              </card>
+            </div>
+
+            <!-- image 5 -->
+
+            <div class="col-span-12 sm:col-span-6 md:col-span-3">
+              <card class="w-full flex flex-col">
+                <div class="relative">
+        
+                  <!-- Image Video -->
+                  <a href="#">
+                    <div class="w-60 h-60">
+                      <img src="5.jpeg" class="aspect-w-1 w-full h-full" />
+                    </div>
+                  </a>
+        
+                  <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">$22</p>
+                </div>
+        
+                <div class="flex flex-row mt-2 gap-2">
+                  
+        
+                  <!-- Description -->
+                  <div clas="flex flex-col">
+                    <a href="#">
+                      <p class="text-gray-100 text-sm font-semibold">The Harmony Round Dining Set</p>
+                    </a>
+                    <a class="text-gray-400 text-xs mt-2 hover:text-gray-100" href="https://dining-set.swiftxr.app/"> View in Your Space ( AR ) </a>
+                    <p class="text-gray-400 text-xs mt-1">
+                      This innovative Dining Set
+                    </p>
+                  </div>
+        
+                </div>
+              </card>
+            </div>
+
+            <!-- image 6 -->
+
+            <div class="col-span-12 sm:col-span-6 md:col-span-3">
+              <card class="w-full flex flex-col">
+                <div class="relative">
+        
+                  <!-- Image Video -->
+                  <a href="#">
+                    <div class="w-60 h-60">
+                      <img src="6.jpeg" class="aspect-w-1 w-full h-full" />
+                    </div>
+                  </a>
+        
+                  <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">$22</p>
+                </div>
+        
+                <div class="flex flex-row mt-2 gap-2">
+                  
+    
+                  <!-- Description -->
+                  <div clas="flex flex-col">
+                    <a href="#">
+                      <p class="text-gray-100 text-sm font-semibold">The  Cloudscape Curved  Sofa</p>
+                    </a>
+                    <a class="text-gray-400 text-xs mt-2 hover:text-gray-100" href="https://curved-sofa.swiftxr.app/"> View in Your Space ( AR ) </a>
+                    <p class="text-gray-400 text-xs mt-1">
+                      This innovative Dining Set
+                    </p>
+                  </div>
+        
+                </div>
+              </card>
+            </div>
+
+
+
+
+          </div>
         </div>
        
-        <div class="cards">
-            <div class="card s1">
-                <p>taeillo</p>
-                
-            </div>
-            <div class="card s2">
-                <p>Coming <br>soon</p>
-                
-            </div>
-            <div class="card s3">
-                <p>Coming<br> soon</p>
-                
-            </div>
-            <div class="card s4">
-                <p>Coming <br>soon</p>
-                
-            </div>
-            <div class="card s5">
-                <p>Coming <br>soon</p>
-             </div>
-        </div>
-        </div>
-    </body>
-    
-    </html>
+  </body>
+</html>
